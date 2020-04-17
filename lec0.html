@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- defines the version of html, hyper text markup language -->
+
+<html>
+<!-- html tag, start of the html content -->
+
+<head>
+	<title>html basics</title> <!-- title that shows up on the tab/window -->
+  <link rel="stylesheet" href="style.css"> <!-- links to the style sheet for styles -->
+  <style>
+    h1 {
+      color: blue;
+      text-align: center;
+    }   //h1 style will follow this unless spedified
+    div {
+      background-color: teal; 
+      //these are called css properties, color, width, height, etc.
+      width: 100px;
+      height: 400px;
+      margine: 30px; //boarder of the box
+      padding: 80px; //invisable border of the box
+      font-family: Arial, sans-serif; //use the font you want, then common fonts
+      font-size: 28px; 
+      font-weight: bold;
+      border: 3px solid blue; // boarder: 3px dotted red; etc. 
+    }
+    table{
+      border: 2px solid black; //this creates double border for the table
+      border-collapse: collapse; //removes double border
+      width: 400px; // or width: 80%;
+    }
+    th, tb{ //you can add two things to style together, creates double border unless collapsed
+      border: 1px solid black;
+      padding: 5px;
+      text-alligned: center;
+    }
+
+    #top { //creates id for tops
+      font-size: 20px;
+    }
+    
+    #middle { //creates id for tops
+      font-size: 15px;
+    }
+    
+    #button { //creates id for tops
+      font-size: 10px;
+    }
+
+    .name { //this is the class grouping
+      font-weight: bold;
+    }
+
+  </style> 
+
+</head>
+
+<body>
+	<!-- content in the webpage -->
+	An Unordered List (shows a list with bullet points):
+	<ul>
+		<!-- unordered list -->
+		<li>One Item</li> <!-- list item -->
+		<li>Another Item</li>
+		<li>Yet Another Item</li>
+	</ul>
+	An Ordered List (shows a list that is numbered):
+	<ol>
+		<li>first item</li>
+		<li>second item</li>
+		<li>third item</li>
+		<li>last item</li>
+	</ol>
+
+	<img src="cat.jpg"> <!-- or <img src="web link for image" -->
+  <img src="cat.jpg" height="200" width="300"> 
+  <!-- will streach to the specicifed dimention -->
+  <img src="cat.jpg" height="300"> 
+  <!-- image will auto scale with the height specicifed -->
+  <img src="cat.jpg" heigh= "50%">
+  <!-- image will ALWAYs be 50% of the webpage, even if it shinks -->
+
+  <h1> president </h1>
+
+  <table>
+    <tr> <!-- table row -->
+      <th>First Name</th> <!-- Table heading -->
+      <th>Last Name</th>
+      <th>Years in Office</th>
+    </tr>
+    <tr>
+      <td>George</td> <!-- table data -->
+      <td>Washington</td>
+      <td>1789-1797</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Adams</td>
+      <td>1797-1801</td>
+    </tr>
+  </table>
+
+  <form>
+    <input type="text" placeholder = "Full name" name = "name">
+    <!-- place holder the text inside the textbook, 
+    name references the data base that is going to be saved to -->
+    <button> Submit! </button>
+  </form>
+
+  <h1 style="color:blue; text-align:center;"> Style property test </h1>
+  <h1 style="color:#0c8e05; text-align:center;"> hash colour coding </h1> 
+  <!-- styling can be done at the top of the page --> 
+
+  <div> <!--just a section of the cold that you want to devide -->
+    Hello World!
+  </div>
+
+  <div id="top"> 
+    <!-- this calls the id in the style sheet -->
+    hello world <span class="name"> hello world </span> hello world.
+    <!-- gives name to a type and style them differently -->
+  </div>
+  <div id="middle"> 
+    <!-- this calls the id in the style sheet -->
+    hello world <span class="name"> hello world </span> hello world.
+    <!-- gives name to a type and style them differently -->
+  </div>
+  <div id="button"> 
+    <!-- this calls the id in the style sheet -->
+    hello world <span class="name"> hello world </span> hello world.
+    <!-- gives name to a type and style them differently -->
+  </div>
+
+</body>
+
+</html> <!-- end of the html tag -->
